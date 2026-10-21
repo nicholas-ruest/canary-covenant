@@ -4,7 +4,7 @@
 
 AuditLedger is the source event sequence; WitnessChain is a portable RVF projection. Verifier is a customer of both. Reordering, mutation, missing integrations or a broken witness link invalidates the report.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 LedgerEvent, EventDigest, WitnessArtifact, VerificationReport.
 

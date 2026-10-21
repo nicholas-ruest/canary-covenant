@@ -4,7 +4,7 @@
 
 GrantIssuer creates RolloutGrant only from an approved decision hash. Grant binds release, cohort and ceiling and transitions Issued→Consumed exactly once. Scope mismatch, expiry and replay fail.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 RolloutGrant, GrantScope, GrantState, GrantConsumed.
 

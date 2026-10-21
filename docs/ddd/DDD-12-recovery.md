@@ -4,7 +4,7 @@
 
 RecoveryPlan is rooted at release id and last-good digest. RecoveryExecutor applies ordered compensations with idempotency keys. The context cannot promote; successful rollback emits RecoveryCompleted for the ledger.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 RecoveryPlan, RecoveryAction, IdempotencyKey, RecoveryOutcome.
 

@@ -1,0 +1,186 @@
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-config/src/lib.rs:2:62
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:.1,unacceptable_harm:.2,min_samples:20,bet:-.5}}}impl RuntimeConfig{pub ...
+  |                                                              ^^
+  |
+help: must have an integer part
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:0.1,unacceptable_harm:.2,min_samples:20,bet:-.5}}}impl RuntimeConfig{pub fn from_map(m:&HashMap<String,String>)->Result<Self,ConfigError>{let mut c=Self::default();if let Some(v)=m.get("CANARY_ALPHA"){c.alpha=v.parse().map_err(|_|ConfigError::Invalid("alpha".into()))?}if !(0.0..1.0).contains(&c.alpha){return Err(ConfigError::Invalid("alpha".into()))}Ok(c)}pub fn redacted(m:&HashMap<String,String>)->HashMap<String,String>{m.iter().map(|(k,v)|(k.clone(),if k.contains("TOKEN")||k.contains("KEY"){"[REDACTED]".into()}else{v.clone()})).collect()}}
+  |                                                              +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-config/src/lib.rs:2:83
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:.1,unacceptable_harm:.2,min_samples:20,bet:-.5}}}impl RuntimeConfig{pub ...
+  |                                                                                   ^^
+  |
+help: must have an integer part
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:.1,unacceptable_harm:0.2,min_samples:20,bet:-.5}}}impl RuntimeConfig{pub fn from_map(m:&HashMap<String,String>)->Result<Self,ConfigError>{let mut c=Self::default();if let Some(v)=m.get("CANARY_ALPHA"){c.alpha=v.parse().map_err(|_|ConfigError::Invalid("alpha".into()))?}if !(0.0..1.0).contains(&c.alpha){return Err(ConfigError::Invalid("alpha".into()))}Ok(c)}pub fn redacted(m:&HashMap<String,String>)->HashMap<String,String>{m.iter().map(|(k,v)|(k.clone(),if k.contains("TOKEN")||k.contains("KEY"){"[REDACTED]".into()}else{v.clone()})).collect()}}
+  |                                                                                   +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-config/src/lib.rs:2:106
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:.1,unacceptable_harm:.2,min_samples:20,bet:-.5}}}impl RuntimeConfig{pub ...
+  |                                                                                                          ^^
+  |
+help: must have an integer part
+  |
+2 | impl Default for RuntimeConfig{fn default()->Self{Self{alpha:.1,unacceptable_harm:.2,min_samples:20,bet:-0.5}}}impl RuntimeConfig{pub fn from_map(m:&HashMap<String,String>)->Result<Self,ConfigError>{let mut c=Self::default();if let Some(v)=m.get("CANARY_ALPHA"){c.alpha=v.parse().map_err(|_|ConfigError::Invalid("alpha".into()))?}if !(0.0..1.0).contains(&c.alpha){return Err(ConfigError::Invalid("alpha".into()))}Ok(c)}pub fn redacted(m:&HashMap<String,String>)->HashMap<String,String>{m.iter().map(|(k,v)|(k.clone(),if k.contains("TOKEN")||k.contains("KEY"){"[REDACTED]".into()}else{v.clone()})).collect()}}
+  |                                                                                                          +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:88
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(f...
+  |                                                                                        ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(0.2,.1,-.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                        +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:91
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(f...
+  |                                                                                           ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,0.1,-.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                           +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:95
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(f...
+  |                                                                                               ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-0.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                               +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:220
+  |
+3 | ...!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(0.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                                                                                                                                                            +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:223
+  |
+3 | ....reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,0.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                                                                                                                                                               +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-eprocess/src/lib.rs:3:227
+  |
+3 | ...ched())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn healthy_crosses(){let mut e=EProcess::new(.2,.1,-.5).unwrap();for _ in 0..30{e.observe(false).unwrap();}assert!(e.reached())}#[test]fn harm_reduces(){let mut e=EProcess::new(.2,.1,-0.5).unwrap();e.observe(true).unwrap();assert!(e.wealth()<1.)}}
+  |                                                                                                                                                                                                                                   +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-grant/src/lib.rs:3:162
+  |
+3 | ...::new("r").unwrap(),CohortId::new("c").unwrap(),Percentage::new(.1).unwrap(),"d".into()).unwrap();g.consume().unwrap();assert_eq!(...
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn single_use(){let mut g=RolloutGrant::issue(ReleaseId::new("r").unwrap(),CohortId::new("c").unwrap(),Percentage::new(0.1).unwrap(),"d".into()).unwrap();g.consume().unwrap();assert_eq!(g.consume(),Err(GrantError::Consumed))}}
+  |                                                                                                                                                                  +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-planner/src/lib.rs:2:104
+  |
+2 | impl Planner{pub fn propose(a:&RiskAssessment,n:usize,min:usize,reached:bool)->Proposal{if a.harm_rate>.3{return Proposal{decision:De...
+  |                                                                                                        ^^
+  |
+help: must have an integer part
+  |
+2 | impl Planner{pub fn propose(a:&RiskAssessment,n:usize,min:usize,reached:bool)->Proposal{if a.harm_rate>0.3{return Proposal{decision:Decision::Rollback,reason:"harm boundary exceeded".into()}}if n<min{return Proposal{decision:Decision::Hold,reason:"minimum samples not reached".into()}}if reached{return Proposal{decision:Decision::Promote,reason:"anytime-valid threshold reached".into()}}Proposal{decision:Decision::Hold,reason:"evidence threshold not reached".into()}}}
+  |                                                                                                        +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-planner/src/lib.rs:3:88
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn rollback(){let a=RiskAssessment{harm_rate:.5,e_value:0.,incident_penalty:0.,budget_remai...
+  |                                                                                        ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn rollback(){let a=RiskAssessment{harm_rate:0.5,e_value:0.,incident_penalty:0.,budget_remaining:0.,reasons:vec![]};assert_eq!(Planner::propose(&a,20,20,false).decision,Decision::Rollback)}}
+  |                                                                                        +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-policy/src/lib.rs:3:146
+  |
+3 | ...t{harm_rate:0.,e_value:20.,incident_penalty:0.,budget_remaining:.2,reasons:vec![]};assert_eq!(PolicyEngine::decide(PolicyInput{fla...
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | #[cfg(test)]mod tests{use super::*;#[test]fn flag_dominates(){let r=RiskAssessment{harm_rate:0.,e_value:20.,incident_penalty:0.,budget_remaining:0.2,reasons:vec![]};assert_eq!(PolicyEngine::decide(PolicyInput{flag:false,rvf:true,ruvector:true,eprocess:true,proposal:Proposal{decision:Decision::Promote,reason:"ok".into()},risk:r}).decision,Decision::Hold)}}
+  |                                                                                                                                                  +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-risk/src/lib.rs:3:167
+  |
+3 | ...m_rate();let p=m.iter().map(|x|match x.severity{Severity::Low=>.05,Severity::Medium=>.15,Severity::High=>.35,Severity::Critical=>1...
+  |                                                                   ^^^
+  |
+help: must have an integer part
+  |
+3 | impl RiskEngine{pub fn assess(b:&ObservationBatch,e:f64,m:&[IncidentMatch])->RiskAssessment{let h=b.harm_rate();let p=m.iter().map(|x|match x.severity{Severity::Low=>0.05,Severity::Medium=>.15,Severity::High=>.35,Severity::Critical=>1.}).fold(0.,f64::max);RiskAssessment{harm_rate:h,e_value:e,incident_penalty:p,budget_remaining:(.2-h).max(0.),reasons:vec![format!("harm_rate={h:.3}"),format!("e_value={e:.3}"),format!("incident_penalty={p:.2}")]}}}
+  |                                                                                                                                                                       +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-risk/src/lib.rs:3:189
+  |
+3 | ...).map(|x|match x.severity{Severity::Low=>.05,Severity::Medium=>.15,Severity::High=>.35,Severity::Critical=>1.}).fold(0.,f64::max);...
+  |                                                                   ^^^
+  |
+help: must have an integer part
+  |
+3 | impl RiskEngine{pub fn assess(b:&ObservationBatch,e:f64,m:&[IncidentMatch])->RiskAssessment{let h=b.harm_rate();let p=m.iter().map(|x|match x.severity{Severity::Low=>.05,Severity::Medium=>0.15,Severity::High=>.35,Severity::Critical=>1.}).fold(0.,f64::max);RiskAssessment{harm_rate:h,e_value:e,incident_penalty:p,budget_remaining:(.2-h).max(0.),reasons:vec![format!("harm_rate={h:.3}"),format!("e_value={e:.3}"),format!("incident_penalty={p:.2}")]}}}
+  |                                                                                                                                                                                             +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-risk/src/lib.rs:3:209
+  |
+3 | ...erity{Severity::Low=>.05,Severity::Medium=>.15,Severity::High=>.35,Severity::Critical=>1.}).fold(0.,f64::max);RiskAssessment{harm_...
+  |                                                                   ^^^
+  |
+help: must have an integer part
+  |
+3 | impl RiskEngine{pub fn assess(b:&ObservationBatch,e:f64,m:&[IncidentMatch])->RiskAssessment{let h=b.harm_rate();let p=m.iter().map(|x|match x.severity{Severity::Low=>.05,Severity::Medium=>.15,Severity::High=>0.35,Severity::Critical=>1.}).fold(0.,f64::max);RiskAssessment{harm_rate:h,e_value:e,incident_penalty:p,budget_remaining:(.2-h).max(0.),reasons:vec![format!("harm_rate={h:.3}"),format!("e_value={e:.3}"),format!("incident_penalty={p:.2}")]}}}
+  |                                                                                                                                                                                                                 +
+
+error: float literals must have an integer part
+ --> /home/ruv/work/canary-covenant/crates/cc-risk/src/lib.rs:3:330
+  |
+3 | ...ment{harm_rate:h,e_value:e,incident_penalty:p,budget_remaining:(.2-h).max(0.),reasons:vec![format!("harm_rate={h:.3}"),format!("e_...
+  |                                                                    ^^
+  |
+help: must have an integer part
+  |
+3 | impl RiskEngine{pub fn assess(b:&ObservationBatch,e:f64,m:&[IncidentMatch])->RiskAssessment{let h=b.harm_rate();let p=m.iter().map(|x|match x.severity{Severity::Low=>.05,Severity::Medium=>.15,Severity::High=>.35,Severity::Critical=>1.}).fold(0.,f64::max);RiskAssessment{harm_rate:h,e_value:e,incident_penalty:p,budget_remaining:(0.2-h).max(0.),reasons:vec![format!("harm_rate={h:.3}"),format!("e_value={e:.3}"),format!("incident_penalty={p:.2}")]}}}
+  |                                                                                                                                                                                                                                                                                                                                          +

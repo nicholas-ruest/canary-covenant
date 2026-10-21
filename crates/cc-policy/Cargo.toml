@@ -1,0 +1,12 @@
+[package]
+name = "cc-policy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-planner = { path = "../cc-planner" }
+cc-risk = { path = "../cc-risk" }
+cc-types = { path = "../cc-types" }
+serde = { workspace = true }

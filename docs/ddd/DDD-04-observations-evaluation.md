@@ -4,7 +4,7 @@
 
 ObservationBatch groups sequence-ordered binary harms with supporting latency/success metrics. Evaluator owns frozen fixtures and variant comparisons, never release authority.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 Observation, ObservationBatch, FixtureId, EvaluationResult.
 

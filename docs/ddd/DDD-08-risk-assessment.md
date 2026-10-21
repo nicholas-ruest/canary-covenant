@@ -4,7 +4,7 @@
 
 RiskEngine creates an explainable assessment from harm rate, e-value, exposure, recalled incidents and budget. It returns components and reasons; it does not collapse missing intelligence into zero risk.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 RiskAssessment, RiskReason, ErrorBudget.
 

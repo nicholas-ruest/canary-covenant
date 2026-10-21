@@ -1,0 +1,15 @@
+[package]
+name = "cc-ruvector"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-incidents = { path = "../cc-incidents" }
+ruvector-core = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

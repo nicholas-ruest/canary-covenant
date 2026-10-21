@@ -1,0 +1,4 @@
+[INFO] Searching: "progressive delivery canary rollout e-process OpenFeature RuVector RVF" (semantic)
+
+✅ Using native better-sqlite3
+[ERROR] Database not found

@@ -1,0 +1,7 @@
+{
+  "packages": 24,
+  "internal_edges": 50,
+  "zero_reverse_callers": [
+    "cc-cli"
+  ]
+}

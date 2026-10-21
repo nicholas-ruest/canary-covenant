@@ -4,7 +4,7 @@
 
 IncidentSet owns historical failures; IncidentMemory is a port with RuVector adapter. Embeddings are deterministic value objects. Recall returns bounded typed matches with finite scores; no result can authorize release.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 Incident, Severity, IncidentEmbedding, IncidentMatch.
 

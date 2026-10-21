@@ -1,0 +1,5 @@
+   Compiling cc-cli v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.93s
+     Running `target/debug/canary-covenant evaluate --variant combined`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target/debug/canary-covenant evaluate --variant combined --harmful`

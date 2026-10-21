@@ -1,0 +1,302 @@
+warning[duplicate]: found 2 duplicate entries for crate 'getrandom'
+   ┌─ /home/ruv/work/canary-covenant/Cargo.lock:70:1
+   │
+70 │ ╭ getrandom 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+71 │ │ getrandom 0.4.3 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ getrandom v0.2.17
+     └── rand_core v0.6.4
+         ├── ed25519-dalek v2.2.0
+         │   └── rvf-crypto v0.2.0
+         │       └── cc-rvf v0.1.0
+         │           ├── cc-orchestrator v0.1.0
+         │           │   ├── cc-api v0.1.0
+         │           │   ├── cc-cli v0.1.0
+         │           │   └── cc-evaluation v0.1.0
+         │           │       └── cc-cli v0.1.0 (*)
+         │           └── cc-verifier v0.1.0
+         │               └── cc-orchestrator v0.1.0 (*)
+         ├── rand v0.8.8
+         │   ├── rand_distr v0.4.3
+         │   │   └── ruvector-core v2.4.0
+         │   │       └── cc-ruvector v0.1.0
+         │   │           ├── cc-orchestrator v0.1.0 (*)
+         │   │           └── cc-risk v0.1.0
+         │   │               ├── cc-orchestrator v0.1.0 (*)
+         │   │               ├── cc-planner v0.1.0
+         │   │               │   ├── cc-orchestrator v0.1.0 (*)
+         │   │               │   └── cc-policy v0.1.0
+         │   │               │       └── cc-orchestrator v0.1.0 (*)
+         │   │               └── cc-policy v0.1.0 (*)
+         │   └── ruvector-core v2.4.0 (*)
+         └── rand_chacha v0.3.1
+             └── rand v0.8.8 (*)
+   ├ getrandom v0.4.3
+     ├── tempfile v3.27.0
+     │   ├── cc-evaluation v0.1.0
+     │   │   └── cc-cli v0.1.0
+     │   ├── (dev) cc-orchestrator v0.1.0
+     │   │   ├── cc-api v0.1.0
+     │   │   ├── cc-cli v0.1.0 (*)
+     │   │   └── cc-evaluation v0.1.0 (*)
+     │   └── (dev) cc-ruvector v0.1.0
+     │       ├── cc-orchestrator v0.1.0 (*)
+     │       └── cc-risk v0.1.0
+     │           ├── cc-orchestrator v0.1.0 (*)
+     │           ├── cc-planner v0.1.0
+     │           │   ├── cc-orchestrator v0.1.0 (*)
+     │           │   └── cc-policy v0.1.0
+     │           │       └── cc-orchestrator v0.1.0 (*)
+     │           └── cc-policy v0.1.0 (*)
+     └── uuid v1.28.0
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'hashbrown'
+   ┌─ /home/ruv/work/canary-covenant/Cargo.lock:72:1
+   │
+72 │ ╭ hashbrown 0.14.5 registry+https://github.com/rust-lang/crates.io-index
+73 │ │ hashbrown 0.17.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ hashbrown v0.14.5
+     └── dashmap v6.2.1
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0
+                 ├── cc-orchestrator v0.1.0
+                 │   ├── cc-api v0.1.0
+                 │   ├── cc-cli v0.1.0
+                 │   └── cc-evaluation v0.1.0
+                 │       └── cc-cli v0.1.0 (*)
+                 └── cc-risk v0.1.0
+                     ├── cc-orchestrator v0.1.0 (*)
+                     ├── cc-planner v0.1.0
+                     │   ├── cc-orchestrator v0.1.0 (*)
+                     │   └── cc-policy v0.1.0
+                     │       └── cc-orchestrator v0.1.0 (*)
+                     └── cc-policy v0.1.0 (*)
+   ├ hashbrown v0.17.1
+     └── rkyv v0.8.18
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0
+                 ├── cc-orchestrator v0.1.0
+                 │   ├── cc-api v0.1.0
+                 │   ├── cc-cli v0.1.0
+                 │   └── cc-evaluation v0.1.0
+                 │       └── cc-cli v0.1.0 (*)
+                 └── cc-risk v0.1.0
+                     ├── cc-orchestrator v0.1.0 (*)
+                     ├── cc-planner v0.1.0
+                     │   ├── cc-orchestrator v0.1.0 (*)
+                     │   └── cc-policy v0.1.0
+                     │       └── cc-orchestrator v0.1.0 (*)
+                     └── cc-policy v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'syn'
+    ┌─ /home/ruv/work/canary-covenant/Cargo.lock:150:1
+    │
+150 │ ╭ syn 2.0.119 registry+https://github.com/rust-lang/crates.io-index
+151 │ │ syn 3.0.9 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ syn v2.0.119
+      ├── curve25519-dalek-derive v0.1.1
+      │   └── curve25519-dalek v4.1.3
+      │       └── ed25519-dalek v2.2.0
+      │           └── rvf-crypto v0.2.0
+      │               └── cc-rvf v0.1.0
+      │                   ├── cc-orchestrator v0.1.0
+      │                   │   ├── cc-api v0.1.0
+      │                   │   ├── cc-cli v0.1.0
+      │                   │   └── cc-evaluation v0.1.0
+      │                   │       └── cc-cli v0.1.0 (*)
+      │                   └── cc-verifier v0.1.0
+      │                       └── cc-orchestrator v0.1.0 (*)
+      ├── mockall_derive v0.14.0
+      │   └── mockall v0.14.0
+      │       └── open-feature v0.3.0
+      │           └── cc-openfeature v0.1.0
+      │               └── cc-orchestrator v0.1.0 (*)
+      ├── munge_macro v0.4.7
+      │   └── munge v0.4.7
+      │       └── rkyv v0.8.18
+      │           └── ruvector-core v2.4.0
+      │               └── cc-ruvector v0.1.0
+      │                   ├── cc-orchestrator v0.1.0 (*)
+      │                   └── cc-risk v0.1.0
+      │                       ├── cc-orchestrator v0.1.0 (*)
+      │                       ├── cc-planner v0.1.0
+      │                       │   ├── cc-orchestrator v0.1.0 (*)
+      │                       │   └── cc-policy v0.1.0
+      │                       │       └── cc-orchestrator v0.1.0 (*)
+      │                       └── cc-policy v0.1.0 (*)
+      ├── tracing-attributes v0.1.31
+      │   └── tracing v0.1.44
+      │       └── ruvector-core v2.4.0 (*)
+      ├── typed-builder-macro v0.22.0
+      │   └── typed-builder v0.22.0
+      │       └── open-feature v0.3.0 (*)
+      ├── windows-implement v0.60.2
+      │   └── windows-core v0.62.2
+      │       └── iana-time-zone v0.1.65
+      │           └── chrono v0.4.45
+      │               └── ruvector-core v2.4.0 (*)
+      └── windows-interface v0.59.3
+          └── windows-core v0.62.2 (*)
+    ├ syn v3.0.9
+      ├── async-trait v0.1.92
+      │   └── open-feature v0.3.0
+      │       └── cc-openfeature v0.1.0
+      │           └── cc-orchestrator v0.1.0
+      │               ├── cc-api v0.1.0
+      │               ├── cc-cli v0.1.0
+      │               └── cc-evaluation v0.1.0
+      │                   └── cc-cli v0.1.0 (*)
+      ├── bytecheck_derive v0.8.3
+      │   └── bytecheck v0.8.3
+      │       ├── rend v0.5.4
+      │       │   └── rkyv v0.8.18
+      │       │       └── ruvector-core v2.4.0
+      │       │           └── cc-ruvector v0.1.0
+      │       │               ├── cc-orchestrator v0.1.0 (*)
+      │       │               └── cc-risk v0.1.0
+      │       │                   ├── cc-orchestrator v0.1.0 (*)
+      │       │                   ├── cc-planner v0.1.0
+      │       │                   │   ├── cc-orchestrator v0.1.0 (*)
+      │       │                   │   └── cc-policy v0.1.0
+      │       │                   │       └── cc-orchestrator v0.1.0 (*)
+      │       │                   └── cc-policy v0.1.0 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── clap_derive v4.6.7
+      │   └── clap v4.6.7
+      │       └── cc-cli v0.1.0 (*)
+      ├── ptr_meta_derive v0.3.2
+      │   └── ptr_meta v0.3.2
+      │       ├── bytecheck v0.8.3 (*)
+      │       ├── rancor v0.1.3
+      │       │   ├── bytecheck v0.8.3 (*)
+      │       │   └── rkyv v0.8.18 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── rkyv_derive v0.8.18
+      │   └── rkyv v0.8.18 (*)
+      ├── serde_derive v1.0.229
+      │   └── serde v1.0.229
+      │       ├── bincode v2.0.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── cc-cohort v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-config v0.1.0
+      │       │   ├── cc-api v0.1.0 (*)
+      │       │   ├── cc-evaluation v0.1.0 (*)
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-eprocess v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-evaluation v0.1.0 (*)
+      │       ├── cc-exposure v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-grant v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-incidents v0.1.0
+      │       │   ├── cc-embedding v0.1.0
+      │       │   │   └── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-risk v0.1.0 (*)
+      │       │   └── cc-ruvector v0.1.0 (*)
+      │       ├── cc-ledger v0.1.0
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0
+      │       │       └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-metrics v0.1.0
+      │       │   ├── cc-embedding v0.1.0 (*)
+      │       │   ├── cc-evaluation v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-risk v0.1.0 (*)
+      │       ├── cc-openfeature v0.1.0 (*)
+      │       ├── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-planner v0.1.0 (*)
+      │       ├── cc-policy v0.1.0 (*)
+      │       ├── cc-recovery v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-release v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-risk v0.1.0 (*)
+      │       ├── cc-ruvector v0.1.0 (*)
+      │       ├── cc-rvf v0.1.0
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0 (*)
+      │       ├── cc-telemetry v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-types v0.1.0
+      │       │   ├── cc-cohort v0.1.0 (*)
+      │       │   ├── cc-exposure v0.1.0 (*)
+      │       │   ├── cc-grant v0.1.0 (*)
+      │       │   ├── cc-ledger v0.1.0 (*)
+      │       │   ├── cc-openfeature v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-planner v0.1.0 (*)
+      │       │   ├── cc-policy v0.1.0 (*)
+      │       │   ├── cc-recovery v0.1.0 (*)
+      │       │   ├── cc-release v0.1.0 (*)
+      │       │   ├── cc-telemetry v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0 (*)
+      │       ├── cc-verifier v0.1.0 (*)
+      │       ├── chrono v0.4.45
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── ndarray v0.16.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── ruvector-turboquant v2.3.0
+      │           └── ruvector-core v2.4.0 (*)
+      ├── thiserror-impl v2.0.21
+      │   └── thiserror v2.0.21
+      │       ├── cc-api v0.1.0 (*)
+      │       ├── cc-cohort v0.1.0 (*)
+      │       ├── cc-config v0.1.0 (*)
+      │       ├── cc-eprocess v0.1.0 (*)
+      │       ├── cc-grant v0.1.0 (*)
+      │       ├── cc-incidents v0.1.0 (*)
+      │       ├── cc-metrics v0.1.0 (*)
+      │       ├── cc-openfeature v0.1.0 (*)
+      │       ├── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-recovery v0.1.0 (*)
+      │       ├── cc-release v0.1.0 (*)
+      │       ├── cc-ruvector v0.1.0 (*)
+      │       ├── cc-rvf v0.1.0 (*)
+      │       ├── cc-types v0.1.0 (*)
+      │       ├── cc-verifier v0.1.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── ruvector-turboquant v2.3.0 (*)
+      ├── tokio-macros v2.7.2
+      │   └── tokio v1.54.0
+      │       ├── cc-cli v0.1.0 (*)
+      │       ├── (dev) cc-evaluation v0.1.0 (*)
+      │       ├── (dev) cc-openfeature v0.1.0 (*)
+      │       ├── (dev) cc-orchestrator v0.1.0 (*)
+      │       └── open-feature v0.3.0 (*)
+      └── wasm-bindgen-macro-support v0.2.129
+          └── wasm-bindgen-macro v0.2.129
+              └── wasm-bindgen v0.2.129
+                  ├── chrono v0.4.45 (*)
+                  ├── iana-time-zone v0.1.65
+                  │   └── chrono v0.4.45 (*)
+                  ├── js-sys v0.3.106
+                  │   ├── chrono v0.4.45 (*)
+                  │   ├── iana-time-zone v0.1.65 (*)
+                  │   └── uuid v1.28.0
+                  │       └── ruvector-core v2.4.0 (*)
+                  └── uuid v1.28.0 (*)
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/canary-covenant/deny.toml:7:87
+  │
+7 │ allow = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unicode-3.0","Zlib","CDLA-Permissive-2.0"]
+  │                                                                                       ━━━━━━━━━━━━━━━━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/canary-covenant/deny.toml:7:60
+  │
+7 │ allow = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unicode-3.0","Zlib","CDLA-Permissive-2.0"]
+  │                                                            ━━━ unmatched license allowance
+
+advisories ok, bans ok, licenses ok, sources ok

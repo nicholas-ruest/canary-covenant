@@ -1,0 +1,19 @@
+   Compiling cc-ruvector v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-ruvector)
+   Compiling cc-telemetry v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-telemetry)
+   Compiling cc-cohort v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-cohort)
+   Compiling cc-types v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-types)
+   Compiling cc-incidents v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-incidents)
+   Compiling cc-config v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-config)
+   Compiling cc-metrics v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-metrics)
+   Compiling cc-risk v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-risk)
+   Compiling cc-eprocess v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-eprocess)
+error[E0610]: `{float}` is a primitive type and therefore doesn't have fields
+  --> crates/cc-eprocess/src/lib.rs:58:22
+   |
+58 |         for _ in 0.0.30 {
+   |                      ^^
+
+   Compiling cc-planner v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-planner)
+For more information about this error, try `rustc --explain E0610`.
+error: could not compile `cc-eprocess` (lib test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

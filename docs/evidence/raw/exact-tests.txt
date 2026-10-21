@@ -1,0 +1,177 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running unittests src/lib.rs (target/debug/deps/cc_api-519e70e2021ba06c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/canary_covenant-872d1ddf5591050e)
+
+running 1 test
+test tests::parses_all_variants_and_rejects_unknown_values ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_cohort-e867768b748aa2dc)
+
+running 1 test
+test tests::ordered ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_config-dd7fd41d7cb6b40d)
+
+running 1 test
+test tests::redacts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_embedding-876e17cd2553be71)
+
+running 1 test
+test tests::dimension ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_eprocess-be31bbdd50b00fdc)
+
+running 2 tests
+test tests::harm_reduces ... ok
+test tests::healthy_crosses ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_evaluation-b94b9fd1f9e0685e)
+
+running 1 test
+test tests::reproducible ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_exposure-7d87a8599fbf3939)
+
+running 1 test
+test tests::unique ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_grant-49b82a87d8522cd1)
+
+running 1 test
+test tests::single_use ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_incidents-0c6677253847825d)
+
+running 1 test
+test tests::seed_valid ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_ledger-2a249959babeeed1)
+
+running 1 test
+test tests::links ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_metrics-8832cc77ad18b07b)
+
+running 1 test
+test tests::summary ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_openfeature-752479c54c7c56e4)
+
+running 1 test
+test tests::official_sdk_executes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_orchestrator-8ca25b4f9ae7762b)
+
+running 2 tests
+test tests::combined_paths ... ok
+test tests::ablations_hold ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.64s
+
+     Running tests/system.rs (target/debug/deps/system-20a9dcbff4ff3413)
+
+running 2 tests
+test healthy_promotes_with_all_integrations_and_verified_witness ... ok
+test harmful_rolls_back_and_executes_recovery ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_planner-2653305a976b33ce)
+
+running 1 test
+test tests::rollback ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_policy-3e15155fefeaa135)
+
+running 1 test
+test tests::flag_dominates ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_recovery-ad916be2b1b066e7)
+
+running 1 test
+test tests::idempotent ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_release-7909bd243c65d6b5)
+
+running 1 test
+test tests::lifecycle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_risk-01289b9d1d396f41)
+
+running 1 test
+test tests::penalty ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_ruvector-7faa021796aa5e01)
+
+running 1 test
+test tests::real_roundtrip ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_rvf-f1a912a460b18982)
+
+running 1 test
+test tests::detects_tamper ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_telemetry-058888ee6b17a008)
+
+running 1 test
+test tests::counts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_types-081156008deffa18)
+
+running 1 test
+test tests::invariants ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/cc_verifier-4c3ed484d8df3e47)
+
+running 1 test
+test tests::requires_witness ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

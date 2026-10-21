@@ -4,7 +4,7 @@
 
 Planner proposes Hold/Promote/Rollback. PolicyEngine is a separate aggregate/service applying flags, evidence, incidents, budgets, witness readiness and degraded modes. PolicyDecision includes every gate result.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 Proposal, PolicyInput, PolicyDecision, DenialReason.
 
