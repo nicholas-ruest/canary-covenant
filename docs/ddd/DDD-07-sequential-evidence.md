@@ -4,7 +4,7 @@
 
 EProcess is the aggregate root. It owns p0, alpha, predictable bet, wealth, count and factor trace. Observation order is immutable; wealth must remain finite/nonnegative. Crossing `1/alpha` creates EvidenceReached, not Promote.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 EProcess, Bet, EValue, EvidenceReached.
 

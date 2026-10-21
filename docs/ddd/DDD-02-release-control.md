@@ -4,7 +4,7 @@
 
 The aggregate root is ReleaseCandidate. It owns candidate identity and lifecycle Draft→Validated→Active→Promoted/RolledBack. Digest mismatch, activation before validation and terminal-state mutation are forbidden.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 ReleaseCandidate; ReleaseValidated, ReleaseActivated, ReleasePromoted, ReleaseRolledBack.
 

@@ -1,0 +1,20 @@
+
+[INFO] Initializing swarm...
+  Creating coordination topology...
+  Initializing memory namespace...
+  Setting up communication channels...
+
++------------+----------------------------+
+| Property   | Value                      |
++------------+----------------------------+
+| Swarm ID   | swarm-1792546487082-b18zhh |
+| Topology   | hierarchical               |
+| Max Agents | 1                          |
+| Auto Scale | Enabled                    |
+| Protocol   | message-bus                |
+| V3 Mode    | Disabled                   |
++------------+----------------------------+
+
+[OK] Swarm initialized successfully
+  Wrote permission manifest (preset: strict, 3 roles) → .swarm/permissions.jsonl
+  Audit trail seeded → .swarm/permission-audit.jsonl

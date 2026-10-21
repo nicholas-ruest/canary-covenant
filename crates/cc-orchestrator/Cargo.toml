@@ -1,0 +1,34 @@
+[package]
+name = "cc-orchestrator"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-types = { path = "../cc-types" }
+cc-release = { path = "../cc-release" }
+cc-cohort = { path = "../cc-cohort" }
+cc-exposure = { path = "../cc-exposure" }
+cc-metrics = { path = "../cc-metrics" }
+cc-openfeature = { path = "../cc-openfeature" }
+cc-incidents = { path = "../cc-incidents" }
+cc-embedding = { path = "../cc-embedding" }
+cc-ruvector = { path = "../cc-ruvector" }
+cc-eprocess = { path = "../cc-eprocess" }
+cc-risk = { path = "../cc-risk" }
+cc-planner = { path = "../cc-planner" }
+cc-policy = { path = "../cc-policy" }
+cc-grant = { path = "../cc-grant" }
+cc-rvf = { path = "../cc-rvf" }
+cc-ledger = { path = "../cc-ledger" }
+cc-verifier = { path = "../cc-verifier" }
+cc-recovery = { path = "../cc-recovery" }
+cc-config = { path = "../cc-config" }
+cc-telemetry = { path = "../cc-telemetry" }
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
+tempfile = { workspace = true }

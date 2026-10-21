@@ -4,7 +4,7 @@
 
 Defines Release Candidate, Cohort, Exposure, Observation, Incident, E-process, Proposal, Decision, Grant, Recovery Plan, Ledger Event and Witness Chain. IDs are opaque nonempty values; percentages and risk are finite [0,1]. Cross-context values live only in `cc-types`; behavior remains in owning contexts.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 ReleaseId, CohortId, Percentage, Decision, Sequence.
 

@@ -1,0 +1,24 @@
+   Compiling cc-ruvector v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-ruvector)
+   Compiling cc-ledger v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-ledger)
+   Compiling cc-grant v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-grant)
+   Compiling cc-embedding v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-embedding)
+   Compiling cc-recovery v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-recovery)
+   Compiling cc-release v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-release)
+   Compiling clap v4.6.7
+error[E0603]: struct `DbOptions` is private
+  --> crates/cc-ruvector/src/lib.rs:2:32
+   |
+ 2 | use ruvector_core::{vector_db::DbOptions, SearchQuery, VectorDB, VectorEntry};
+   |                                ^^^^^^^^^ private struct
+   |
+note: the struct `DbOptions` is defined here
+  --> /home/ruv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ruvector-core-2.4.0/src/vector_db.rs:10:5
+   |
+10 | use crate::types::*;
+   |     ^^^^^^^^^^^^
+
+   Compiling cc-exposure v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-exposure)
+For more information about this error, try `rustc --explain E0603`.
+error: could not compile `cc-ruvector` (lib test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `cc-ruvector` (lib) due to 1 previous error

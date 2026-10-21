@@ -1,0 +1,11 @@
+[package]
+name = "cc-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-config = { path = "../cc-config" }
+cc-orchestrator = { path = "../cc-orchestrator" }
+thiserror = { workspace = true }

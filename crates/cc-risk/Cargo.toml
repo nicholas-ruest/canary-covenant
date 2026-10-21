@@ -1,0 +1,12 @@
+[package]
+name = "cc-risk"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-incidents = { path = "../cc-incidents" }
+cc-ruvector = { path = "../cc-ruvector" }
+cc-metrics = { path = "../cc-metrics" }
+serde = { workspace = true }

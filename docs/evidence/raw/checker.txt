@@ -1,0 +1,25 @@
+{
+  "status": "NONCOMPLIANT_BUILD",
+  "counts": {
+    "adrs": 25,
+    "ddds": 12,
+    "crates": 24,
+    "animatedSvgs": 2
+  },
+  "failures": [
+    "Missing or empty: docs/validation.md",
+    "Missing section language: docs/ddd/DDD-02-release-control.md",
+    "Missing section language: docs/ddd/DDD-03-cohorts-exposure.md",
+    "Missing section language: docs/ddd/DDD-04-observations-evaluation.md",
+    "Missing section language: docs/ddd/DDD-05-feature-eligibility.md",
+    "Missing section language: docs/ddd/DDD-06-incident-memory.md",
+    "Missing section language: docs/ddd/DDD-07-sequential-evidence.md",
+    "Missing section language: docs/ddd/DDD-08-risk-assessment.md",
+    "Missing section language: docs/ddd/DDD-09-planning-policy.md",
+    "Missing section language: docs/ddd/DDD-10-grant-authority.md",
+    "Missing section language: docs/ddd/DDD-11-audit-witness.md",
+    "Missing section language: docs/ddd/DDD-12-recovery.md",
+    "Missing integration test sources"
+  ],
+  "limitations": "Structural checks do not prove meaningful architecture, linked workspace membership, executed upstream integrations, benchmark validity, CI success, or publication authorization."
+}

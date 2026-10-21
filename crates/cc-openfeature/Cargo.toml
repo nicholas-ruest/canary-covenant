@@ -1,0 +1,15 @@
+[package]
+name = "cc-openfeature"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cc-types = { path = "../cc-types" }
+open-feature = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }

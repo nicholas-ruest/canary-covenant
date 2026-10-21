@@ -1,0 +1,635 @@
+error[wildcard]: found 2 wildcard dependencies for crate 'cc-api'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-api/Cargo.toml:9:13
+   │
+ 9 │ cc-config = { path = "../cc-config" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-orchestrator = { path = "../cc-orchestrator" }
+   │                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-api v0.1.0
+
+error[wildcard]: found 2 wildcard dependencies for crate 'cc-cli'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-cli/Cargo.toml:13:17
+   │
+13 │ cc-evaluation = { path = "../cc-evaluation" }
+   │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+14 │ cc-orchestrator = { path = "../cc-orchestrator" }
+   │                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-cli v0.1.0
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-cohort'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-cohort/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-cohort v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 2 wildcard dependencies for crate 'cc-embedding'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-embedding/Cargo.toml:9:16
+   │
+ 9 │ cc-incidents = { path = "../cc-incidents" }
+   │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-metrics = { path = "../cc-metrics" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-embedding v0.1.0
+     └── cc-orchestrator v0.1.0
+         ├── cc-api v0.1.0
+         ├── cc-cli v0.1.0
+         └── cc-evaluation v0.1.0
+             └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 3 wildcard dependencies for crate 'cc-evaluation'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-evaluation/Cargo.toml:9:13
+   │
+ 9 │ cc-config = { path = "../cc-config" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-metrics = { path = "../cc-metrics" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+11 │ cc-orchestrator = { path = "../cc-orchestrator" }
+   │                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-evaluation v0.1.0
+     └── cc-cli v0.1.0
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-exposure'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-exposure/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-exposure v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-grant'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-grant/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-grant v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-ledger'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-ledger/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-ledger v0.1.0
+    ├── cc-orchestrator v0.1.0
+    │   ├── cc-api v0.1.0
+    │   ├── cc-cli v0.1.0
+    │   └── cc-evaluation v0.1.0
+    │       └── cc-cli v0.1.0 (*)
+    └── cc-verifier v0.1.0
+        └── cc-orchestrator v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-openfeature'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-openfeature/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-openfeature v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 20 wildcard dependencies for crate 'cc-orchestrator'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-orchestrator/Cargo.toml:9:12
+   │
+ 9 │ cc-types = { path = "../cc-types" }
+   │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-release = { path = "../cc-release" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+11 │ cc-cohort = { path = "../cc-cohort" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+12 │ cc-exposure = { path = "../cc-exposure" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+13 │ cc-metrics = { path = "../cc-metrics" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+14 │ cc-openfeature = { path = "../cc-openfeature" }
+   │                  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+15 │ cc-incidents = { path = "../cc-incidents" }
+   │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+16 │ cc-embedding = { path = "../cc-embedding" }
+   │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+17 │ cc-ruvector = { path = "../cc-ruvector" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+18 │ cc-eprocess = { path = "../cc-eprocess" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+19 │ cc-risk = { path = "../cc-risk" }
+   │           ━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+20 │ cc-planner = { path = "../cc-planner" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+21 │ cc-policy = { path = "../cc-policy" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+22 │ cc-grant = { path = "../cc-grant" }
+   │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+23 │ cc-rvf = { path = "../cc-rvf" }
+   │          ━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+24 │ cc-ledger = { path = "../cc-ledger" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+25 │ cc-verifier = { path = "../cc-verifier" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+26 │ cc-recovery = { path = "../cc-recovery" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+27 │ cc-config = { path = "../cc-config" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+28 │ cc-telemetry = { path = "../cc-telemetry" }
+   │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-orchestrator v0.1.0
+     ├── cc-api v0.1.0
+     ├── cc-cli v0.1.0
+     └── cc-evaluation v0.1.0
+         └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 2 wildcard dependencies for crate 'cc-planner'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-planner/Cargo.toml:9:11
+   │
+ 9 │ cc-risk = { path = "../cc-risk" }
+   │           ━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-types = { path = "../cc-types" }
+   │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-planner v0.1.0
+     ├── cc-orchestrator v0.1.0
+     │   ├── cc-api v0.1.0
+     │   ├── cc-cli v0.1.0
+     │   └── cc-evaluation v0.1.0
+     │       └── cc-cli v0.1.0 (*)
+     └── cc-policy v0.1.0
+         └── cc-orchestrator v0.1.0 (*)
+
+error[wildcard]: found 3 wildcard dependencies for crate 'cc-policy'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-policy/Cargo.toml:9:14
+   │
+ 9 │ cc-planner = { path = "../cc-planner" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-risk = { path = "../cc-risk" }
+   │           ━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+11 │ cc-types = { path = "../cc-types" }
+   │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-policy v0.1.0
+     └── cc-orchestrator v0.1.0
+         ├── cc-api v0.1.0
+         ├── cc-cli v0.1.0
+         └── cc-evaluation v0.1.0
+             └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-recovery'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-recovery/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-recovery v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-release'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-release/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-release v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 3 wildcard dependencies for crate 'cc-risk'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-risk/Cargo.toml:9:16
+   │
+ 9 │ cc-incidents = { path = "../cc-incidents" }
+   │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-ruvector = { path = "../cc-ruvector" }
+   │               ━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+11 │ cc-metrics = { path = "../cc-metrics" }
+   │              ━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-risk v0.1.0
+     ├── cc-orchestrator v0.1.0
+     │   ├── cc-api v0.1.0
+     │   ├── cc-cli v0.1.0
+     │   └── cc-evaluation v0.1.0
+     │       └── cc-cli v0.1.0 (*)
+     ├── cc-planner v0.1.0
+     │   ├── cc-orchestrator v0.1.0 (*)
+     │   └── cc-policy v0.1.0
+     │       └── cc-orchestrator v0.1.0 (*)
+     └── cc-policy v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-ruvector'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-ruvector/Cargo.toml:9:16
+  │
+9 │ cc-incidents = { path = "../cc-incidents" }
+  │                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-ruvector v0.1.0
+    ├── cc-orchestrator v0.1.0
+    │   ├── cc-api v0.1.0
+    │   ├── cc-cli v0.1.0
+    │   └── cc-evaluation v0.1.0
+    │       └── cc-cli v0.1.0 (*)
+    └── cc-risk v0.1.0
+        ├── cc-orchestrator v0.1.0 (*)
+        ├── cc-planner v0.1.0
+        │   ├── cc-orchestrator v0.1.0 (*)
+        │   └── cc-policy v0.1.0
+        │       └── cc-orchestrator v0.1.0 (*)
+        └── cc-policy v0.1.0 (*)
+
+error[wildcard]: found 1 wildcard dependency for crate 'cc-telemetry'
+  ┌─ /home/ruv/work/canary-covenant/crates/cc-telemetry/Cargo.toml:9:12
+  │
+9 │ cc-types = { path = "../cc-types" }
+  │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+  │
+  ├ cc-telemetry v0.1.0
+    └── cc-orchestrator v0.1.0
+        ├── cc-api v0.1.0
+        ├── cc-cli v0.1.0
+        └── cc-evaluation v0.1.0
+            └── cc-cli v0.1.0 (*)
+
+error[wildcard]: found 3 wildcard dependencies for crate 'cc-verifier'
+   ┌─ /home/ruv/work/canary-covenant/crates/cc-verifier/Cargo.toml:9:13
+   │
+ 9 │ cc-ledger = { path = "../cc-ledger" }
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+10 │ cc-rvf = { path = "../cc-rvf" }
+   │          ━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+11 │ cc-types = { path = "../cc-types" }
+   │            ━━━━━━━━━━━━━━━━━━━━━━━━ wildcard dependency
+   │
+   ├ cc-verifier v0.1.0
+     └── cc-orchestrator v0.1.0
+         ├── cc-api v0.1.0
+         ├── cc-cli v0.1.0
+         └── cc-evaluation v0.1.0
+             └── cc-cli v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'getrandom'
+   ┌─ /home/ruv/work/canary-covenant/Cargo.lock:70:1
+   │
+70 │ ╭ getrandom 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+71 │ │ getrandom 0.4.3 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ getrandom v0.2.17
+     └── rand_core v0.6.4
+         ├── ed25519-dalek v2.2.0
+         │   └── rvf-crypto v0.2.0
+         │       └── cc-rvf v0.1.0
+         │           ├── cc-orchestrator v0.1.0
+         │           │   ├── cc-api v0.1.0
+         │           │   ├── cc-cli v0.1.0
+         │           │   └── cc-evaluation v0.1.0
+         │           │       └── cc-cli v0.1.0 (*)
+         │           └── cc-verifier v0.1.0
+         │               └── cc-orchestrator v0.1.0 (*)
+         ├── rand v0.8.8
+         │   ├── rand_distr v0.4.3
+         │   │   └── ruvector-core v2.4.0
+         │   │       └── cc-ruvector v0.1.0
+         │   │           ├── cc-orchestrator v0.1.0 (*)
+         │   │           └── cc-risk v0.1.0
+         │   │               ├── cc-orchestrator v0.1.0 (*)
+         │   │               ├── cc-planner v0.1.0
+         │   │               │   ├── cc-orchestrator v0.1.0 (*)
+         │   │               │   └── cc-policy v0.1.0
+         │   │               │       └── cc-orchestrator v0.1.0 (*)
+         │   │               └── cc-policy v0.1.0 (*)
+         │   └── ruvector-core v2.4.0 (*)
+         └── rand_chacha v0.3.1
+             └── rand v0.8.8 (*)
+   ├ getrandom v0.4.3
+     ├── tempfile v3.27.0
+     │   ├── cc-evaluation v0.1.0
+     │   │   └── cc-cli v0.1.0
+     │   ├── (dev) cc-orchestrator v0.1.0
+     │   │   ├── cc-api v0.1.0
+     │   │   ├── cc-cli v0.1.0 (*)
+     │   │   └── cc-evaluation v0.1.0 (*)
+     │   └── (dev) cc-ruvector v0.1.0
+     │       ├── cc-orchestrator v0.1.0 (*)
+     │       └── cc-risk v0.1.0
+     │           ├── cc-orchestrator v0.1.0 (*)
+     │           ├── cc-planner v0.1.0
+     │           │   ├── cc-orchestrator v0.1.0 (*)
+     │           │   └── cc-policy v0.1.0
+     │           │       └── cc-orchestrator v0.1.0 (*)
+     │           └── cc-policy v0.1.0 (*)
+     └── uuid v1.28.0
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'hashbrown'
+   ┌─ /home/ruv/work/canary-covenant/Cargo.lock:72:1
+   │
+72 │ ╭ hashbrown 0.14.5 registry+https://github.com/rust-lang/crates.io-index
+73 │ │ hashbrown 0.17.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ hashbrown v0.14.5
+     └── dashmap v6.2.1
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0
+                 ├── cc-orchestrator v0.1.0
+                 │   ├── cc-api v0.1.0
+                 │   ├── cc-cli v0.1.0
+                 │   └── cc-evaluation v0.1.0
+                 │       └── cc-cli v0.1.0 (*)
+                 └── cc-risk v0.1.0
+                     ├── cc-orchestrator v0.1.0 (*)
+                     ├── cc-planner v0.1.0
+                     │   ├── cc-orchestrator v0.1.0 (*)
+                     │   └── cc-policy v0.1.0
+                     │       └── cc-orchestrator v0.1.0 (*)
+                     └── cc-policy v0.1.0 (*)
+   ├ hashbrown v0.17.1
+     └── rkyv v0.8.18
+         └── ruvector-core v2.4.0
+             └── cc-ruvector v0.1.0
+                 ├── cc-orchestrator v0.1.0
+                 │   ├── cc-api v0.1.0
+                 │   ├── cc-cli v0.1.0
+                 │   └── cc-evaluation v0.1.0
+                 │       └── cc-cli v0.1.0 (*)
+                 └── cc-risk v0.1.0
+                     ├── cc-orchestrator v0.1.0 (*)
+                     ├── cc-planner v0.1.0
+                     │   ├── cc-orchestrator v0.1.0 (*)
+                     │   └── cc-policy v0.1.0
+                     │       └── cc-orchestrator v0.1.0 (*)
+                     └── cc-policy v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'syn'
+    ┌─ /home/ruv/work/canary-covenant/Cargo.lock:150:1
+    │
+150 │ ╭ syn 2.0.119 registry+https://github.com/rust-lang/crates.io-index
+151 │ │ syn 3.0.9 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ syn v2.0.119
+      ├── curve25519-dalek-derive v0.1.1
+      │   └── curve25519-dalek v4.1.3
+      │       └── ed25519-dalek v2.2.0
+      │           └── rvf-crypto v0.2.0
+      │               └── cc-rvf v0.1.0
+      │                   ├── cc-orchestrator v0.1.0
+      │                   │   ├── cc-api v0.1.0
+      │                   │   ├── cc-cli v0.1.0
+      │                   │   └── cc-evaluation v0.1.0
+      │                   │       └── cc-cli v0.1.0 (*)
+      │                   └── cc-verifier v0.1.0
+      │                       └── cc-orchestrator v0.1.0 (*)
+      ├── mockall_derive v0.14.0
+      │   └── mockall v0.14.0
+      │       └── open-feature v0.3.0
+      │           └── cc-openfeature v0.1.0
+      │               └── cc-orchestrator v0.1.0 (*)
+      ├── munge_macro v0.4.7
+      │   └── munge v0.4.7
+      │       └── rkyv v0.8.18
+      │           └── ruvector-core v2.4.0
+      │               └── cc-ruvector v0.1.0
+      │                   ├── cc-orchestrator v0.1.0 (*)
+      │                   └── cc-risk v0.1.0
+      │                       ├── cc-orchestrator v0.1.0 (*)
+      │                       ├── cc-planner v0.1.0
+      │                       │   ├── cc-orchestrator v0.1.0 (*)
+      │                       │   └── cc-policy v0.1.0
+      │                       │       └── cc-orchestrator v0.1.0 (*)
+      │                       └── cc-policy v0.1.0 (*)
+      ├── tracing-attributes v0.1.31
+      │   └── tracing v0.1.44
+      │       └── ruvector-core v2.4.0 (*)
+      ├── typed-builder-macro v0.22.0
+      │   └── typed-builder v0.22.0
+      │       └── open-feature v0.3.0 (*)
+      ├── windows-implement v0.60.2
+      │   └── windows-core v0.62.2
+      │       └── iana-time-zone v0.1.65
+      │           └── chrono v0.4.45
+      │               └── ruvector-core v2.4.0 (*)
+      └── windows-interface v0.59.3
+          └── windows-core v0.62.2 (*)
+    ├ syn v3.0.9
+      ├── async-trait v0.1.92
+      │   └── open-feature v0.3.0
+      │       └── cc-openfeature v0.1.0
+      │           └── cc-orchestrator v0.1.0
+      │               ├── cc-api v0.1.0
+      │               ├── cc-cli v0.1.0
+      │               └── cc-evaluation v0.1.0
+      │                   └── cc-cli v0.1.0 (*)
+      ├── bytecheck_derive v0.8.3
+      │   └── bytecheck v0.8.3
+      │       ├── rend v0.5.4
+      │       │   └── rkyv v0.8.18
+      │       │       └── ruvector-core v2.4.0
+      │       │           └── cc-ruvector v0.1.0
+      │       │               ├── cc-orchestrator v0.1.0 (*)
+      │       │               └── cc-risk v0.1.0
+      │       │                   ├── cc-orchestrator v0.1.0 (*)
+      │       │                   ├── cc-planner v0.1.0
+      │       │                   │   ├── cc-orchestrator v0.1.0 (*)
+      │       │                   │   └── cc-policy v0.1.0
+      │       │                   │       └── cc-orchestrator v0.1.0 (*)
+      │       │                   └── cc-policy v0.1.0 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── clap_derive v4.6.7
+      │   └── clap v4.6.7
+      │       └── cc-cli v0.1.0 (*)
+      ├── ptr_meta_derive v0.3.2
+      │   └── ptr_meta v0.3.2
+      │       ├── bytecheck v0.8.3 (*)
+      │       ├── rancor v0.1.3
+      │       │   ├── bytecheck v0.8.3 (*)
+      │       │   └── rkyv v0.8.18 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── rkyv_derive v0.8.18
+      │   └── rkyv v0.8.18 (*)
+      ├── serde_derive v1.0.229
+      │   └── serde v1.0.229
+      │       ├── bincode v2.0.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── cc-cohort v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-config v0.1.0
+      │       │   ├── cc-api v0.1.0 (*)
+      │       │   ├── cc-evaluation v0.1.0 (*)
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-eprocess v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-evaluation v0.1.0 (*)
+      │       ├── cc-exposure v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-grant v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-incidents v0.1.0
+      │       │   ├── cc-embedding v0.1.0
+      │       │   │   └── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-risk v0.1.0 (*)
+      │       │   └── cc-ruvector v0.1.0 (*)
+      │       ├── cc-ledger v0.1.0
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0
+      │       │       └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-metrics v0.1.0
+      │       │   ├── cc-embedding v0.1.0 (*)
+      │       │   ├── cc-evaluation v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-risk v0.1.0 (*)
+      │       ├── cc-openfeature v0.1.0 (*)
+      │       ├── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-planner v0.1.0 (*)
+      │       ├── cc-policy v0.1.0 (*)
+      │       ├── cc-recovery v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-release v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-risk v0.1.0 (*)
+      │       ├── cc-ruvector v0.1.0 (*)
+      │       ├── cc-rvf v0.1.0
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0 (*)
+      │       ├── cc-telemetry v0.1.0
+      │       │   └── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-types v0.1.0
+      │       │   ├── cc-cohort v0.1.0 (*)
+      │       │   ├── cc-exposure v0.1.0 (*)
+      │       │   ├── cc-grant v0.1.0 (*)
+      │       │   ├── cc-ledger v0.1.0 (*)
+      │       │   ├── cc-openfeature v0.1.0 (*)
+      │       │   ├── cc-orchestrator v0.1.0 (*)
+      │       │   ├── cc-planner v0.1.0 (*)
+      │       │   ├── cc-policy v0.1.0 (*)
+      │       │   ├── cc-recovery v0.1.0 (*)
+      │       │   ├── cc-release v0.1.0 (*)
+      │       │   ├── cc-telemetry v0.1.0 (*)
+      │       │   └── cc-verifier v0.1.0 (*)
+      │       ├── cc-verifier v0.1.0 (*)
+      │       ├── chrono v0.4.45
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── ndarray v0.16.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── ruvector-turboquant v2.3.0
+      │           └── ruvector-core v2.4.0 (*)
+      ├── thiserror-impl v2.0.21
+      │   └── thiserror v2.0.21
+      │       ├── cc-api v0.1.0 (*)
+      │       ├── cc-cohort v0.1.0 (*)
+      │       ├── cc-config v0.1.0 (*)
+      │       ├── cc-eprocess v0.1.0 (*)
+      │       ├── cc-grant v0.1.0 (*)
+      │       ├── cc-incidents v0.1.0 (*)
+      │       ├── cc-metrics v0.1.0 (*)
+      │       ├── cc-openfeature v0.1.0 (*)
+      │       ├── cc-orchestrator v0.1.0 (*)
+      │       ├── cc-recovery v0.1.0 (*)
+      │       ├── cc-release v0.1.0 (*)
+      │       ├── cc-ruvector v0.1.0 (*)
+      │       ├── cc-rvf v0.1.0 (*)
+      │       ├── cc-types v0.1.0 (*)
+      │       ├── cc-verifier v0.1.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── ruvector-turboquant v2.3.0 (*)
+      ├── tokio-macros v2.7.2
+      │   └── tokio v1.54.0
+      │       ├── cc-cli v0.1.0 (*)
+      │       ├── (dev) cc-evaluation v0.1.0 (*)
+      │       ├── (dev) cc-openfeature v0.1.0 (*)
+      │       ├── (dev) cc-orchestrator v0.1.0 (*)
+      │       └── open-feature v0.3.0 (*)
+      └── wasm-bindgen-macro-support v0.2.129
+          └── wasm-bindgen-macro v0.2.129
+              └── wasm-bindgen v0.2.129
+                  ├── chrono v0.4.45 (*)
+                  ├── iana-time-zone v0.1.65
+                  │   └── chrono v0.4.45 (*)
+                  ├── js-sys v0.3.106
+                  │   ├── chrono v0.4.45 (*)
+                  │   ├── iana-time-zone v0.1.65 (*)
+                  │   └── uuid v1.28.0
+                  │       └── ruvector-core v2.4.0 (*)
+                  └── uuid v1.28.0 (*)
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/canary-covenant/deny.toml:5:87
+  │
+5 │ allow = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unicode-3.0","Zlib","CDLA-Permissive-2.0"]
+  │                                                                                       ━━━━━━━━━━━━━━━━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/canary-covenant/deny.toml:5:60
+  │
+5 │ allow = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unicode-3.0","Zlib","CDLA-Permissive-2.0"]
+  │                                                            ━━━ unmatched license allowance
+
+error[unmaintained]: Bincode is unmaintained
+   ┌─ /home/ruv/work/canary-covenant/Cargo.lock:10:1
+   │
+10 │ bincode 2.0.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ unmaintained advisory detected
+   │
+   ├ ID: RUSTSEC-2025-0141
+   ├ Advisory: https://rustsec.org/advisories/RUSTSEC-2025-0141
+   ├ Due to a doxxing and harassment incident, the bincode team has taken the decision to cease development permanently.
+
+     The team considers version 1.3.3 a complete version of bincode that is not in need of any updates.
+
+     ## Alternatives to consider
+
+     * [wincode](https://crates.io/crates/wincode)
+     * [postcard](https://crates.io/crates/postcard)
+     * [bitcode](https://crates.io/crates/bitcode)
+     * [rkyv](https://crates.io/crates/rkyv)
+   ├ Announcement: https://git.sr.ht/~stygianentity/bincode/tree/v3.0/item/README.md
+   ├ Solution: No safe upgrade is available!
+   ├ bincode v2.0.1
+     └── ruvector-core v2.4.0
+         └── cc-ruvector v0.1.0
+             ├── cc-orchestrator v0.1.0
+             │   ├── cc-api v0.1.0
+             │   ├── cc-cli v0.1.0
+             │   └── cc-evaluation v0.1.0
+             │       └── cc-cli v0.1.0 (*)
+             └── cc-risk v0.1.0
+                 ├── cc-orchestrator v0.1.0 (*)
+                 ├── cc-planner v0.1.0
+                 │   ├── cc-orchestrator v0.1.0 (*)
+                 │   └── cc-policy v0.1.0
+                 │       └── cc-orchestrator v0.1.0 (*)
+                 └── cc-policy v0.1.0 (*)
+
+advisories FAILED, bans FAILED, licenses ok, sources ok

@@ -4,7 +4,7 @@
 
 CohortPlan owns ordered stages and ceilings; ExposureLedger owns unique admissions. A promotion changes only one stage. Subjects cannot be admitted twice for the same release/cohort and total exposure cannot exceed the stage ceiling.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 CohortPlan, CohortStage, ExposureLedger, ExposureRecord.
 

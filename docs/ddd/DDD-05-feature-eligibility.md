@@ -4,7 +4,7 @@
 
 FlagGate is the anti-corruption service around the official OpenFeature client. EvaluationContext carries release, cohort and tenant. Unknown keys and provider errors are ineligible, never default-true.
 
-## Aggregates, entities, and value objects
+## Ubiquitous language, aggregates, entities, and value objects
 
 FlagDecision, FlagReason, EvaluationAttributes.
 

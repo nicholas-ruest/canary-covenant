@@ -1,0 +1,9 @@
+   Compiling cc-orchestrator v0.1.0 (/home/ruv/work/canary-covenant/crates/cc-orchestrator)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.75s
+     Running tests/system.rs (target/debug/deps/system-20a9dcbff4ff3413)
+
+running 2 tests
+test healthy_promotes_with_all_integrations_and_verified_witness ... ok
+test harmful_rolls_back_and_executes_recovery ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s

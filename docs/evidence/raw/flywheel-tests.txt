@@ -1,0 +1,12 @@
+
+> @metaharness/flywheel@0.1.12 test
+> vitest run --run
+
+sh: 1: vitest: not found
+npm error Lifecycle script `test` failed with error:
+npm error code 127
+npm error path /home/ruv/metaharness-arena/packages/flywheel
+npm error workspace @metaharness/flywheel@0.1.12
+npm error location /home/ruv/metaharness-arena/packages/flywheel
+npm error command failed
+npm error command sh -c vitest run --run
