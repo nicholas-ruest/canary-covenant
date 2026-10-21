@@ -1,0 +1,12 @@
+# Integration matrix
+
+| Ingredient | Pin / license | Reused capability | Executed boundary | Owning crates | Test | Ablation |
+| --- | --- | --- | --- | --- | --- | --- |
+| OpenFeature Rust SDK | `open-feature 0.3.0`, `4ad8924…`, Apache-2.0 | Provider registry, evaluation context, typed boolean evaluation | Cargo dependency; custom policy-backed provider registered with official singleton client; `get_bool_details` called | `cc-openfeature`, `cc-orchestrator` | `openfeature_executes_real_provider` and end-to-end healthy/harmful scenarios | `NoOpenFeature` denies cohort admission and promotion |
+| RuVector core | `ruvector-core 2.4.0`, repository `46d816d…`, MIT | Persistent vector insert/search | Cargo dependency; seeded incident vectors inserted then queried with `VectorDB::search` | `cc-embedding`, `cc-ruvector`, `cc-incidents` | `ruvector_roundtrip_recalls_nearest` and full scenario | `NoRuVector` removes recall penalty and records missing intelligence |
+| RVF crypto | `rvf-crypto 0.2.0`, repository `46d816d…`, MIT OR Apache-2.0 | SHAKE-256 action hashes and witness-chain create/verify | Cargo dependency; release events become `WitnessEntry` values and are verified before output | `cc-rvf`, `cc-ledger`, `cc-verifier` | `rvf_chain_detects_tamper` and full scenario verification | `NoRvf` report remains unsealed and cannot graduate |
+| Anytime-valid inference | arXiv:2210.01948 | E-process valid at optional stopping | Owned typed implementation of predictable betting update and Ville threshold | `cc-eprocess`, `cc-risk`, `cc-policy` | null-path property tests, stop-time regression, healthy/harmful fixtures | `NoEProcess` blocks evidence-based promotion |
+| Ruflo | runtime `3.47.1`, MIT | Coordination and provenance ledger | CLI memory lookup, swarm initialization, status and transcript receipts | external build ledger only | exact command receipts | Not a runtime ingredient; unavailable coordination is disclosed |
+| MetaHarness Darwin/Flywheel | checkout `b8c3d38…`; Darwin `0.10.3`; Flywheel `0.1.12` | Candidate evaluation and iterative evidence packaging | Read-only execution from pinned local checkout against JSON evaluation output | `cc-evaluation` plus external evidence scripts | output receipts bound to candidate commit | Build cannot claim this gate if commands fail |
+
+No logos, citations, mocks, or unused manifest entries count as integration. Each mandatory runtime ingredient has a source-level call path and an ablation.
