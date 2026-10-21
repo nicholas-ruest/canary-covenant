@@ -1,5 +1,12 @@
 <p align="center"><img src="docs/assets/hero.svg" alt="Canary Covenant animated rollout overview" width="100%"></p>
 
+<p align="center">
+  <img src="docs/assets/marks/rust-logo-gear-only.svg" alt="Rust" height="44">
+  &nbsp;&nbsp;&nbsp;
+  <img src="docs/assets/marks/openfeature-icon-dual.svg" alt="OpenFeature" height="44">
+</p>
+<p align="center"><sub>Official upstream vectors; see <a href="docs/assets/marks/ATTRIBUTION.md">attribution and trademark notes</a>.</sub></p>
+
 # Canary Covenant
 
 Canary Covenant is a 24-crate Rust control plane for progressively delivering autonomous-agent runtime changes. It combines enterprise flag evaluation, historical incident recall, anytime-valid sequential evidence, bounded promotion authority, and tamper-evident rollout receipts.
